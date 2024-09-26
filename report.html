@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>911 Emergency Call Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            color: #e63946;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            margin-top: 10px;
+            display: block;
+        }
+        input[type="text"],
+        input[type="time"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #e63946;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d62839;
+        }
+        a{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Rescue911 Operator Portal</h1>
+<form action="#" method="post">
+    <label for="caller-name">Caller Name:</label>
+    <input type="text" id="caller-name" name="caller-name" required>
+
+    <label for="caller-phone">Caller Phone:</label>
+    <input type="text" id="caller-phone" name="caller-phone" required>
+
+    <label for="caller-phone">Caller Address:</label>
+    <input type="text" id="caller-address" name="caller-address" required>
+
+    <label for="caller-phone">Nearest Landmark to Emergency:</label>
+    <input type="text" id="caller-landmark" name="caller-landmark" required>
+
+    <label for="emergency-info">Emergency Information:</label>
+    <textarea id="emergency-info" name="emergency-info" rows="4" required></textarea>
+
+    <label for="emergency-type">Priority:</label>
+    <select id="emergency-type" name="emergency-type" required>
+        <option value="">Select an Priority Category</option>
+        <option value="minorCase">Minor Case</option>
+        <option value="stableCase">Stable Case</option>
+        <option value="seriousCase">Serious Case</option>
+        <option value="criticalCase">Critical Case</option>
+    </select>
+
+    <label for="additional-notes">Additional Notes:</label>
+    <textarea id="additional-notes" name="additional-notes" rows="3"></textarea>
+
+    <button type="submit"><a href="callRecorded.html">Submit</a></button>
+</form>
+
+</body>
+</html>
